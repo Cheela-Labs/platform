@@ -1,21 +1,16 @@
 import { ZodTypeAny } from "zod/v3";
-import { CapabilityContext } from "./context";
+import { CapabilityContext } from "./context.js";
 
-export interface CapabilityDefinition<
-    TInput = unknown,
-    TOutput = unknown,
-> {
-    name: string;
+export interface CapabilityDefinition<TInput = unknown, TOutput = unknown> {
+  name: string;
 
-    version?: string;
+  version?: string;
 
-    description?: string;
+  description?: string;
 
-    input?: ZodTypeAny;
+  input?: ZodTypeAny;
 
-    output?: ZodTypeAny;
+  output?: ZodTypeAny;
 
-    execute(
-        context: CapabilityContext<TInput>
-    ): Promise<TOutput> | TOutput
+  execute(context: CapabilityContext<TInput>): Promise<TOutput> | TOutput;
 }

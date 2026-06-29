@@ -1,3 +1,3 @@
-export * from "./capability"
-export * from "./context"
-export * from "./types"
+export * from "./capability.js";
+export * from "./context.js";
+export * from "./types.js";
