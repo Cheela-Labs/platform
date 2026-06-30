@@ -1,4 +1,8 @@
 import type { Message } from "@cheela/core";
+import type { EventEmitter } from "./events.js";
+import type { Planner } from "./Planner.js";
+import type { Provider } from "./Provider.js";
+import type { ToolRegistry } from "./ToolRegistry.js";
 
 export interface ToolCall {
   id: string;
@@ -32,7 +36,7 @@ export interface RunOptions {
   messages: readonly Message[];
 }
 
-export interface RuntimeOptions {
+export interface RuntimeConfig {
   provider: Provider;
   planner: Planner;
   registry: ToolRegistry;

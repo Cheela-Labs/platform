@@ -1,6 +1,6 @@
 // packages/runtime/src/RuntimeState.ts
 
-import type { Message } from "@cheela/core"; // Adjust this import as needed.
+import type { Message } from "@cheela/core";
 
 export type RuntimeStatus =
   "idle" | "running" | "completed" | "failed" | "cancelled";

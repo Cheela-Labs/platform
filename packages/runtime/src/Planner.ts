@@ -1,5 +1,5 @@
-import type { RuntimeContext } from "./RuntimeContext";
-import type { ExecutionStep, ProviderResponse } from "./types";
+import type { RuntimeContext } from "./RuntimeContext.js";
+import type { ExecutionStep, ProviderResponse } from "./types.js";
 
 export interface Planner {
   plan(

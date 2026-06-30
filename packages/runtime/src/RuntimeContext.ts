@@ -2,7 +2,7 @@
 
 import type { Message } from "@cheela/core";
 
-import { RuntimeState, type RuntimeStatus } from "./RuntimeState";
+import { RuntimeState, type RuntimeStatus } from "./RuntimeState.js";
 
 export class RuntimeContext {
   constructor(private readonly state: RuntimeState) {}

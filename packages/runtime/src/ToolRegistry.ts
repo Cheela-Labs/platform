@@ -1,4 +1,4 @@
-import type { ToolCall } from "./types";
+import type { ToolCall } from "./types.js";
 
 export interface ToolResult {
   content: unknown;
