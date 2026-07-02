@@ -8,10 +8,12 @@ allowBuilds:
   esbuild: false
 
 catalog:
+  "@changesets/cli": "^2.31.0"
   "@biomejs/biome": ^2.5.1
   "@types/node": ^24.13.2
   turbo: ^2.10.2
   tsup: ^8.5.1
   typescript: ^5.9.3
   vitest: ^3.2.6
+  "@vitest/coverage-v8": "^4.1.9"
   zod: ^4.4.3

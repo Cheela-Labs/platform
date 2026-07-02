@@ -24,6 +24,6 @@ describe("createAction", () => {
       handler: (_ctx, input: string) => input,
     });
 
-    await expect(action.handler({}, "hello")).resolves.toBe("hello");
+    await expect(action.handler({}, "hello")).toBe("hello");
   });
 });

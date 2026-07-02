@@ -15,8 +15,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
-    "@changesets/cli": "^2.31.0",
+    "@changesets/cli": "catalog:",
     "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
     "tsup": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",
