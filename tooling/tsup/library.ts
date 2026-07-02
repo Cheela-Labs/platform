@@ -3,7 +3,7 @@ import { defineConfig } from "tsup";
 export default defineConfig({
   entry: ["src/index.ts"],
 
-  format: ["esm", "cjs"],
+  format: ["esm"],
 
   dts: true,
 
@@ -11,11 +11,11 @@ export default defineConfig({
 
   clean: true,
 
+  splitting: false,
+
   treeshake: true,
 
   minify: false,
 
-  target: "node22",
-
-  outDir: "dist",
+  target: "node22"
 });

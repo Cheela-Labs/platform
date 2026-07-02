@@ -1,34 +1,26 @@
 {
-  "packageManager": "pnpm@11.9.0",
-  "devDependencies": {
-    "typescript": "^6.0.3",
-    "turbo": "^2.10.0",
-    "eslint": "^10.6.0",
-    "@eslint/js": "^10.0.1",
-    "typescript-eslint": "^8.62.0",
-    "prettier": "^3.9.1",
-    "eslint-config-prettier": "^10.1.8",
-    "husky": "^9.1.7",
-    "lint-staged": "^17.0.8",
-    "@changesets/cli": "^2.31.0",
-    "vitest": "^4.1.9",
-    "tsx": "^4.22.4"
-  },
+  "name": "@cheela",
   "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "typecheck": "turbo typecheck",
     "test": "turbo test",
-    "format": "prettier --write ."
+    "typecheck": "turbo typecheck",
+    "format": "biome check --write",
+    "check": "biome check",
+    "clean": "turbo clean"
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,json,md}": [
-      "prettier --write"
-    ],
-    "*.{ts,tsx}": [
-      "eslint --fix"
-    ]
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@changesets/cli": "^2.31.0",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "zod": "catalog:"
   }
 }

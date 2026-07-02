@@ -1,21 +1,3 @@
-import { defineConfig } from "tsup";
+import config from "../../tooling/tsup/library.js"
 
-export default defineConfig({
-  entry: ["src/index.ts"],
-
-  format: ["esm", "cjs"],
-
-  dts: true,
-
-  sourcemap: true,
-
-  clean: true,
-
-  treeshake: true,
-
-  minify: false,
-
-  target: "node22",
-
-  outDir: "dist",
-});
+export default config;

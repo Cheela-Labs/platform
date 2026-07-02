@@ -1,33 +1,44 @@
 {
   "name": "@cheela/sdk",
   "version": "0.0.1",
+  "description": "Developer SDK for building Cheela capabilities.",
+  "license": "Apache-2.0",
   "type": "module",
-  "description": "",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     }
   },
+
+  "files": [
+    "dist"
+  ],
+
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "typecheck": "tsc --noEmit"
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+
   "dependencies": {
-    "zod": "^4.4.3"
+    "@cheela/core": "workspace:*",
+    "zod": "catalog:"
   },
+
   "devDependencies": {
-    "@types/node": "^26.0.1",
-    "tsup": "^8.5.1",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.9"
+    "@biomejs/biome": "catalog:",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }
