@@ -1,45 +1,45 @@
 {
-  "name": "@cheela/sdk",
-  "version": "0.0.1",
-  "description": "Developer SDK for building Cheela capabilities.",
-  "license": "Apache-2.0",
-  "type": "module",
+	"name": "@cheela/sdk",
+	"version": "0.0.1",
+	"description": "Developer SDK for building Cheela capabilities.",
+	"license": "Apache-2.0",
+	"type": "module",
 
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
 
-  "files": [
-    "dist"
-  ],
+	"files": [
+		"dist"
+	],
 
-  "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "lint": "biome check .",
-    "format": "biome check --write .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
-    "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist"
-  },
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"lint": "biome check .",
+		"format": "biome check --write .",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:coverage": "vitest run --coverage",
+		"typecheck": "tsc --noEmit",
+		"clean": "rm -rf dist"
+	},
 
-  "dependencies": {
-    "zod": "catalog:"
-  },
+	"dependencies": {
+		"zod": "catalog:"
+	},
 
-  "devDependencies": {
-    "@biomejs/biome": "catalog:",
-    "@types/node": "catalog:",
-    "tsup": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
-  }
+	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"@types/node": "catalog:",
+		"tsup": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	}
 }

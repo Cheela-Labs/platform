@@ -1,3 +1,3 @@
-import config from "../../tooling/tsup/library.js"
+import config from "../../tooling/tsup/library.js";
 
 export default config;

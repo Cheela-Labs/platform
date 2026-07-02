@@ -1,9 +1,8 @@
 {
-  "extends": "../../tooling/tsconfig/library.json",
-  "compilerOptions": {
-    "rootDir": "src"
-  },
-  "include": ["src"]
-  ,
-  "exclude": ["tsup.config.ts"]
+	"extends": "../../tooling/tsconfig/library.json",
+	"compilerOptions": {
+		"rootDir": "src"
+	},
+	"include": ["src"],
+	"exclude": ["tsup.config.ts"]
 }
